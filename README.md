@@ -1,2 +1,2 @@
 # Sudoku Solver 
-## Using [Backtracking](https://en.wikipedia.org/wiki/Backtracking)
+Using [Backtracking](https://en.wikipedia.org/wiki/Backtracking)
