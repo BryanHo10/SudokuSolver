@@ -22,19 +22,19 @@ function Cell(x,y,w,num){
         line(0,this.w*6,height,this.w*6);
         
         pop();
-        rect(this.x*this.w,this.y*this.w,this.w,this.w);
+        rect(this.x*this.w,this.y*this.w,this.w-1,this.w-1);
         
         if(!this.unSolved){
             fill(0);
-            textSize(32);
-            text(this.num,(this.x*this.w+this.w/2)-8,(this.y*this.w+this.w/2)+8);
+            textSize(50);
+            text(this.num,(this.x*this.w+this.w/2)-16,(this.y*this.w+this.w/2)+16);
         }
         else if(this.num!=0){
             push();
             noStroke();
             fill(255,0,100);
-            textSize(32);
-            text(this.num,(this.x*this.w+this.w/2)-8,(this.y*this.w+this.w/2)+8);
+            textSize(50);
+            text(this.num,(this.x*this.w+this.w/2)-16,(this.y*this.w+this.w/2)+16);
             pop();
         }
     }
